@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  emailservice:
+    image: ${DOCKER_REGISTRY-}emailservice
+    build:
+      context: .\EmailService
+      dockerfile: Dockerfile
