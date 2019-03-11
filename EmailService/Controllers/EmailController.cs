@@ -37,7 +37,9 @@ namespace EmailService.Controllers
             
             MailText = MailText.Replace("[accepturl]", acceptUrl);
             MailText = MailText.Replace("[rejecturl]", rejectUrl);
-
+            MailText = MailText.Replace("[name]", emailModel.visitorName);
+            MailText = MailText.Replace("[phoneNumber]", emailModel.phoneNumber);
+            MailText = MailText.Replace("[aadharNumber]", emailModel.aadharNumber);
 
 
             string subject = "Email Test";
